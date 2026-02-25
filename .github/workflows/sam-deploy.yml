@@ -31,10 +31,10 @@ jobs:
       - name: 必要なパッケージをインストール
         run: |
           pip install --upgrade pip
-          pip install -r testProject/hello_world/requirements.txt
+          pip install -r hello_world/requirements.txt
 
       - name: SAM ビルド
-        working-directory: testProject
+        working-directory: .
         run: sam build
 
       - name: SAM デプロイ
