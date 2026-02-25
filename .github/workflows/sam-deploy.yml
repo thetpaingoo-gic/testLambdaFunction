@@ -38,6 +38,6 @@ jobs:
         run: sam build
 
       - name: SAM デプロイ
-        working-directory: testProject
+        working-directory: .
         run: sam deploy --no-confirm-changeset --stack-name test-project --capabilities CAPABILITY_IAM
 
